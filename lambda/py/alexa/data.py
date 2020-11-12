@@ -22,41 +22,8 @@ jingle = {
 
 en = {
     "card": {
-        "title": 'My Radio',
-        "text": 'Less bla bla bla, more la la la',
-        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
-        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
-    },
-    "url": 'https://audio1.maxi80.com',
-    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-}
-
-fr = {
-    "card": {
-        "title": 'My Radio',
-        "text": 'Moins de bla bla bla, plus de la la la',
-        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
-        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
-    },
-    "url": 'https://audio1.maxi80.com',
-    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-}
-
-it = {
-    "card": {
-        "title": 'La Mia Radio',
-        "text": 'Meno parlare, più musica',
-        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
-        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
-    },
-    "url": 'https://audio1.maxi80.com',
-    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
-}
-
-es = {
-    "card": {
-        "title": 'Mi Radio',
-        "text": 'Menos conversación, más música',
+        "title": 'My repeater',
+        "text": 'You can listen to the repeater',
         "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
         "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
     },

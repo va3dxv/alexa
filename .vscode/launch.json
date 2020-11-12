@@ -1,0 +1,13 @@
+{
+    "type": "python",
+    "request": "launch",
+    "name": "Skill Debug",
+    "program": "lambda",
+    "args": [
+         "--accessToken", "<ACCESS_TOKEN>",
+         "--skillId", "<SKILL_ID>",
+         "--skillHandler", "<HANDLER_NAME>",
+         "--skillFilePath", "<FILE_NAME>",
+         "--region", "<REGION>"
+     ]
+ }
