@@ -5,9 +5,9 @@
     "program": "lambda",
     "args": [
          "--accessToken", "<ACCESS_TOKEN>",
-         "--skillId", "<SKILL_ID>",
-         "--skillHandler", "<HANDLER_NAME>",
-         "--skillFilePath", "<FILE_NAME>",
-         "--region", "<REGION>"
+         "--skillId", "amzn1.ask.skill.b5c3a293-cf6d-43aa-b94d-ffb55c6ddf7a",
+         "--skillHandler", "lambda_handler",
+         "--skillFilePath", "lambda_function.py",
+         "--region", "NA(North America)"
      ]
  }

@@ -30,3 +30,36 @@ en = {
     "url": 'https://audio1.maxi80.com',
     "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
 }
+
+fr = {
+    "card": {
+        "title": 'My repeater',
+        "text": 'You can listen to the repeater',
+        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
+        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
+    },
+    "url": 'https://audio1.maxi80.com',
+    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
+}
+
+it = {
+    "card": {
+        "title": 'My repeater',
+        "text": 'You can listen to the repeater',
+        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
+        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
+    },
+    "url": 'https://audio1.maxi80.com',
+    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
+}
+
+es = {
+    "card": {
+        "title": 'My repeater',
+        "text": 'You can listen to the repeater',
+        "large_image_url": 'https://alexademo.ninja/skills/logo-512.png',
+        "small_image_url": 'https://alexademo.ninja/skills/logo-108.png'
+    },
+    "url": 'https://audio1.maxi80.com',
+    "start_jingle": 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/jingle.m4a'
+}

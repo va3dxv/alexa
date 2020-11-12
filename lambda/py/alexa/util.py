@@ -10,7 +10,7 @@ from ask_sdk_model.interfaces.audioplayer import (
 from ask_sdk_model.interfaces import display
 from ask_sdk_core.response_helper import ResponseFactory
 from ask_sdk_core.handler_input import HandlerInput
-from . import data
+import data
 
 def audio_data(request):
     # type: (Request) -> Dict
