@@ -1,13 +1,12 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "my radio",
+            "invocationName": "repeater monitor",
             "intents": [
                 {
                     "name": "PlayAudio",
                     "slots": [],
                     "samples": [
-                        "play",
                         "start",
                         "play my radio",
                         "play my radio please",
