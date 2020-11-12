@@ -27,6 +27,13 @@
         "endpoint": {
           "sourceDir": "lambda/py"
         },
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:598628761688:function:4a9ca7e9-b640-49ee-a4f9-c3056810528d:Release_0"
+              }
+            }
+          },
         "interfaces": [
           {
             "type": "AUDIO_PLAYER"
