@@ -23,11 +23,11 @@ def audio_data(request):
     if locale.startswith("en"):
         return data.en
     elif locale.startswith("fr"):
-        return data.fr
+        return data.en
     elif locale.startswith("it"):
-        return data.it
+        return data.en
     elif locale.startswith("es"):
-        return data.es
+        return data.en
     else:
         return {}
 
@@ -148,30 +148,30 @@ def should_play_jingle(handler_input):
     # type: (HandlerInput) -> bool
     will_play_jingle = False
 
-    jingle_data = audio_data(handler_input.request_envelope.request)
-    if jingle_data is None or "start_jingle" not in jingle_data:
-        return will_play_jingle
+    # jingle_data = audio_data(handler_input.request_envelope.request)
+    # if jingle_data is None or "start_jingle" not in jingle_data:
+    #     return will_play_jingle
 
-    attr = handler_input.attributes_manager.persistent_attributes
+    # attr = handler_input.attributes_manager.persistent_attributes
 
-    if attr is None or not attr.keys():
-        attr["last_played"] = "0001/01/01 00:00:00:000000"
-        attr["played_count"] = 0
-        handler_input.attributes_manager.persistent_attributes = attr
+    # if attr is None or not attr.keys():
+    #     attr["last_played"] = "0001/01/01 00:00:00:000000"
+    #     attr["played_count"] = 0
+    #     handler_input.attributes_manager.persistent_attributes = attr
 
-    last_played_epoch = attr["last_played"]
-    now = datetime.datetime.now()
-    format = "%Y/%m/%d %H:%M:%S:%f"
-    delta = datetime.timedelta(milliseconds=data.jingle["play_once_every"])
+    # last_played_epoch = attr["last_played"]
+    # now = datetime.datetime.now()
+    # format = "%Y/%m/%d %H:%M:%S:%f"
+    # delta = datetime.timedelta(milliseconds=data.jingle["play_once_every"])
 
-    # When last played is more than play_once_every milliseconds ago, play jingle
+    # # When last played is more than play_once_every milliseconds ago, play jingle
 
-    will_play_jingle = (last_played_epoch == "0001/01/01 00:00:00:000000"
-                        or datetime.datetime.strptime(last_played_epoch, format) + delta < now)
+    # will_play_jingle = (last_played_epoch == "0001/01/01 00:00:00:000000"
+    #                     or datetime.datetime.strptime(last_played_epoch, format) + delta < now)
 
-    if will_play_jingle:
-        attr["last_played"] = now.strftime(format)
-        attr["played_count"] += 1
-        handler_input.attributes_manager.save_persistent_attributes()
+    # if will_play_jingle:
+    #     attr["last_played"] = now.strftime(format)
+    #     attr["played_count"] += 1
+    #     handler_input.attributes_manager.save_persistent_attributes()
 
     return will_play_jingle

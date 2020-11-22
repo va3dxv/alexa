@@ -10,7 +10,8 @@ from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 
-from alexa import data, util
+import data
+import util
 
 sb = StandardSkillBuilder(
     table_name=data.jingle["db_table"], auto_create_table=True)

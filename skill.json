@@ -1,54 +1,63 @@
 {
-  "manifest": {
-    "publishingInformation": {
-      "locales": {
-        "en-US": {
-          "summary": "This is a repeater monitor",
-          "examplePhrases": [
-            "Alexa, monitor the repeater"
-          ],
-          "keywords": [
-            "repeater",
-            "radio"
-          ],
-          "name": "My Repeater",
-          "description": "Listen to My Repeater",
-          "smallIconUri": "https://alexademo.ninja/skills/logo-108.png",
-          "largeIconUri": "https://alexademo.ninja/skills/logo-512.png"
-        }
-      },
-      "isAvailableWorldwide": true,
-      "testingInstructions": "Just do it",
-      "category": "STREAMING_SERVICE",
-      "distributionCountries": []
-    },
-    "apis": {
-      "custom": {
-        "endpoint": {
-          "sourceDir": "lambda/py"
-        },
-        "regions": {
-          "NA": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:598628761688:function:cb2476b1-d8fd-494b-b659-cdcabcd7ce63:Release_0"
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "repeater monitor",
+          "modelConfiguration": {
+              "fallbackIntentSensitivity": {
+                  "level": "LOW"
               }
-            }
           },
-        "interfaces": [
-          {
-            "type": "AUDIO_PLAYER"
-          }
-        ]
+          "intents": [
+              {
+                  "name": "PlayAudio",
+                  "slots": [],
+                  "samples": [
+                      "repeater",
+                      "monitor",
+                      "listen"
+                  ]
+              },
+              {
+                  "name": "AMAZON.PauseIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ResumeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": [
+                      "repeater help"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "mute repeater",
+                      "pause repeater",
+                      "halt repeater",
+                      "stop repeater"
+                  ]
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StartOverIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": []
       }
-    },
-    "manifestVersion": "1.0",
-    "permissions": [],
-    "privacyAndCompliance": {
-      "allowsPurchases": false,
-      "isExportCompliant": true,
-      "containsAds": false,
-      "isChildDirected": false,
-      "usesPersonalInfo": false
-    }
   }
 }
